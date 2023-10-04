@@ -13,7 +13,7 @@
 </form>
 
 <?php 
-    if ($_SERVER["REQUESTED_METHOD"] == "POST")
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $liczba = $_POST["liczba"];
         if ($liczba % 2 == 0)
